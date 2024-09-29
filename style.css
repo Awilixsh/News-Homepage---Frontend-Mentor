@@ -1,0 +1,98 @@
+/* COLORS */
+
+.colorSoftorange{
+	color: hsl(35, 77%, 62%);
+}
+.colorSoftred{
+	color: hsl(5, 85%, 63%);
+}
+.colorOffwhite{
+	color: hsl(36, 100%, 99%);
+}
+.colorGrayishblue{
+	color: hsl(233, 13%, 42%);
+}
+.colorDarkgrayishblue{
+	color: hsl(236, 13%, 42%);
+}
+.colorVerydarkblue{
+	color: hsl(240, 100%,5%);
+}
+
+/* BACKGROUND COLORS */
+
+.bgcolorSoftorange{
+	background-color: hsl(35, 77%, 62%);
+}
+.bgcolorSoftred{
+	background-color: hsl(5, 85%, 63%);
+}
+.bgcolorOffwhite{
+	background-color: hsl(36, 100%, 99%);
+}
+.bgcolorGrayishblue{
+	background-color: hsl(233, 13%, 42%);
+}
+.bgcolorDarkgrayishblue{
+	background-color: hsl(236, 13%, 42%);
+}
+.bgcolorVerydarkblue{
+	background-color: hsl(240, 100%,5%);
+}
+
+/* navBar */ 
+
+#navMain ol{
+	list-style-type: none;
+}
+
+#navMain{
+	display: inline-block;
+	width: 100%;
+}
+#navMain-right{
+	float: right;
+	
+}
+
+li{
+	float: left;
+	padding-left: 30px;
+}
+
+li:hover{
+	color: red;
+}
+
+#imgLogo{
+	padding-top: 4px;
+	width: 65px;
+}
+
+/* MAIN */
+
+main{
+	margin: 0 auto;
+}
+
+/* Media */
+
+/* PHONE WIDTH */
+@media screen and (max-width: 390px){
+	main{
+		width: 94%;
+		padding-top: 20px;
+	}
+	
+	/* navBar */
+	#navMain-right{
+		display: none;
+	}
+	#imgBurger-mobile{
+		float: right;
+		padding-top: 14px;
+	}
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
