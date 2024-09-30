@@ -83,11 +83,7 @@
 
 li{
 	float: left;
-	padding-left: 44px;
-}
-
-li:active{
-	color: red;
+	padding-left: 50px;
 }
 
 #imgLogo{
@@ -131,10 +127,7 @@ button{
 
 #asideMain{
 	display: grid;
-	padding-left: 18px;
-	padding-right: 18px;
-	padding-bottom: 18px;
-	grid-auto-rows: minmax(10px, auto);
+	grid-auto-rows: minmax(0px, auto);
 }
 h2{
 	font-size: 28px;
@@ -184,6 +177,9 @@ h2{
 		grid-template-columns: 1fr;
 		grid-gap: 60px;
 	}
+	li:active{
+		color: red;
+	}
 	/* MAIN Overlay */
 	
 	
@@ -220,13 +216,19 @@ h2{
 		display: flex;
 		flex-flow: column wrap;
 		margin-top: -300px;
-		margin-left: -40px;
+		margin-left: -65px;
 		gap: 26px;
 		font-size: 18px;
 	}
 	#imgClose{
 		margin-top: 33px;
 		margin-left: 180px;
+	}
+	/* ASIDE */
+	#asideMain{
+		padding-left: 18px;
+		padding-right: 18px;
+		padding-bottom: 18px;
 	}
 	/* SECTION MAIN */
 	#sectionMain{
@@ -272,10 +274,8 @@ h2{
 	/* MAIN */
 	
 	main{
-		width: 84%;
-		margin-top: 40px;	
-		margin-bottom: 40px;
-		height: 100%;		
+		width: 70%;
+		margin-top: 20px;		
 	}
 	
 	/* navBar */
@@ -284,14 +284,13 @@ h2{
 		grid-row: 1/2;
 		display: grid;
 		grid-template-columns: 40% 60%;
-		padding-bottom: 50px;
+		padding-bottom: 20px;
 	}
 	#imgBurger-mobile{
 		display: none;
 	}
 	#imgClose{
 		display: none;
-		
 	}
 	#navMain{
 		display: inline-block;
@@ -299,6 +298,9 @@ h2{
 	}
 	#navMain-right{
 		float: right;
+	}
+	li:hover{
+		color: hsl(5, 85%, 63%);
 	}
 	/* MAIN CONTENT */
 	#mainContent{
@@ -331,10 +333,24 @@ h2{
 		grid-row: 3/5;
 		line-height: 1.4;
 	}
-	
+	#buttonRead:hover{
+		background-color: hsl(240, 100%,5%);
+		color: hsl(36, 100%, 99%);
+	}
 	/* SECTION NEW */
 	#asideMain{
 		grid-column: 3/4;
+		padding: 0px 34px 20px 34px;
+	}
+	h2{
+		margin-top: 20px;
+		margin-bottom: 10px;
+	}
+	#asidemain p{
+		margin: 0;
+	}
+	.titleHoverSoftorange:hover{
+		color: hsl(35, 77%, 62%);
 	}
 	/* SECTION MULTI */
 	#sectionMulti{
@@ -344,11 +360,11 @@ h2{
 		grid-template-columns: 33.33% 33.33% 33.33%;
 	}
 	/* */
-	.articleMulti{
-		
-	}
 	.imgArticle{
 		height: 140px;
+	}
+	.pArticle_title:hover{
+		color: hsl(5, 85%, 63%);
 	}
 }
 
