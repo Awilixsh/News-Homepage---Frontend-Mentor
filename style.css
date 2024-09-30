@@ -1,3 +1,12 @@
+@font-face{
+	font-family: 'inter-regular';
+	src: url('./assets/fonts/static/Inter-Regular.ttf');
+}
+@font-face{
+	font-family: 'inter-bold';
+	src: url('./assets/fonts/static/Inter-Bold.ttf');
+}
+
 /* COLORS */
 
 .colorSoftorange{
@@ -46,21 +55,16 @@
 	list-style-type: none;
 }
 
-#navMain{
-	display: inline-block;
-	width: 100%;
-}
-#navMain-right{
-	float: right;
-	
-}
-
 li{
 	float: left;
 	padding-left: 30px;
 }
 
 li:hover{
+	color: red;
+}
+
+li:active{
 	color: red;
 }
 
@@ -73,24 +77,110 @@ li:hover{
 
 main{
 	margin: 0 auto;
+	font-family: inter-regular;
 }
 
-/* Media */
+/* MAIN SECTION */
+
+#sectionMain{
+	background-color: hsla(0, 0%, 0%, 0.1);
+}
+#imgMobile{
+	width: 600px;
+} 
 
 /* PHONE WIDTH */
 @media screen and (max-width: 390px){
 	main{
 		width: 94%;
 		padding-top: 20px;
+		z-index: 1;
+	}
+	/* MAIN Overlay */
+	
+	
+	#bgOverlay{
+		position: fixed;
+		display: none;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		z-index: 2;
+		background-color: hsla(0, 0%, 0%, 0.5);
 	}
 	
-	/* navBar */
-	#navMain-right{
-		display: none;
-	}
 	#imgBurger-mobile{
 		float: right;
 		padding-top: 14px;
+	}
+	
+	/* navBar */
+	#navMain{
+		display: none;
+		position: fixed;
+		background-color: white;
+		z-index: 3;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		left: 40%;
+		column-gap: 40px;
+		font-family: inter-bold;
+	}
+	#navMain-right{
+		display: flex;
+		flex-flow: column wrap;
+		margin-top: -300px;
+		margin-left: -40px;
+		gap: 26px;
+		font-size: 18px;
+	}
+	#imgClose{
+		margin-top: 33px;
+		margin-left: 180px;
+	}
+	/* SECTION MAIN */
+	
+	#imgMobile{
+		width: 100%;
+	}
+	
+	
+}
+
+@media screen and (min-width: 391px){
+	/* BODY */
+	
+	body{
+		
+	}
+	
+	/* navBar */
+	#divNavbar{
+		display: grid;
+		grid-template-columns: 40% 60%;
+	}
+	#imgBurger-mobile{
+		display: none;
+	}
+	#imgClose{
+		display: none;
+		
+	}
+	#navMain{
+		padding-right: 10px;
+		display: inline-block;
+		width: 100%;
+		
+	}
+	#navMain-right{
+		float: right;
+		
+	}
+	/* MAIN SECTION */
+	#sectionMain{
+		width: 600px;
 	}
 }
 
