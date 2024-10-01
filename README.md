@@ -12,8 +12,6 @@ This is a solution to the [News homepage challenge on Frontend Mentor](https://w
   - [Built with](#built-with)
 - [Author](#author)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
 
 ### The challenge
@@ -25,14 +23,14 @@ Users should be able to:
 
 ### Screenshot
 
-![]()
+![Desktop](./screenshot_desktop.png)
+![Mobile](./screenshot_mobile.png)
+![Mobile_navbar](./screenshot_mobile-navbar.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here]()
-- Live Site URL: [Add live site URL here]()
-
-## My process
+- Solution URL: [Github](https://github.com/Awilixsh/News-Homepage---Frontend-Mentor)
+- Live Site URL: [Github Pages](https://awilixsh.github.io/News-Homepage---Frontend-Mentor/)
 
 ### Built with
 
